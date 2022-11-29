@@ -18,6 +18,8 @@ if (!empty($array[2])) {
         $parametro = trim($parametro,',');
     }
 }
+
+require_once 'Config/App/autoload.php';
 $dicontroller = "controlller/$controller.php";
 if (file_exists($dicontroller)) {
     require_once $dicontroller;
